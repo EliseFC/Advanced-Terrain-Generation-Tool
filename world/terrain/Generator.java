@@ -1,6 +1,7 @@
 package world.terrain;
 
 import world.terrain.generators.FlatGenerator;
+import world.terrain.generators.MyAlgorithm;
 import java.util.HashMap;
 import world.World;
 
@@ -11,7 +12,8 @@ public abstract class Generator {
      * Put all Generator instances in this list and use getGenerator(name) to access them.
      */
     private static final Object[][] generators = new Object[][]{
-        {"FlatGenerator", new FlatGenerator()}
+        {"FlatGenerator", new FlatGenerator()},
+        {"MyAlgorithm", new MyAlgorithm()}
     };
     
     /**
